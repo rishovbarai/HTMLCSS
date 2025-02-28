@@ -4,83 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimal Template</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <img src="images/logo.svg" alt="Logo" class="logo">
+    <header class="header text-center text-white">
+        <img src="images/logo.png" alt="Logo" class="logo">
         <div class="burger-menu" id="burger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
         <nav class="nav" id="nav">
-            <ul>
+            <ul class="list-unstyled">
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact-me">Contact Me</a></li>
             </ul>
         </nav>
         <div class="header-text">
-            <h1>MINIMAL TEMPLATE</h1>
-            <p><em>Hello, I'm Carlos. I love design.</em></p>
+            <h1 class="display-4">MINIMAL TEMPLATE</h1>
+            <p class="lead"><em>Hello, I'm Carlos. I love design.</em></p>
         </div>
     </header>
 
-    <section class="about-me" id="about-me">
-        <h2>ABOUT ME</h2>
-        <p>A full Stack developer based in New York, USA.</p>
-        <p>I am a Full-Stack Developer with over 10 years of experience in web development and design.</p>
-        <p>My passion is to create beautiful and functional websites that provide an excellent user experience.</p>
-        <button>I have a freelance job</button>
+    <section class="about-me text-center py-5" id="about-me">
+        <div class="container">
+            <h2 class="mb-4">ABOUT ME</h2>
+            <p>A full Stack developer based in New York, USA.</p>
+            <p>I am a Full-Stack Developer with over 10 years of experience in web development and design.</p>
+            <p>My passion is to create beautiful and functional websites that provide an excellent user experience.</p>
+            <button class="btn btn-warning about-me-button">I have a freelance job</button>
+        </div>
     </section>
 
-    <section class="projects" id="projects">
-        <h2>SOME PROJECTS</h2>
-        <div class="carousel" style="text-align: center;">
-            <input type="radio" name="carousel" id="slide1" checked>
-            <input type="radio" name="carousel" id="slide2">
-            <input type="radio" name="carousel" id="slide3">
+    <section class="projects text-center py-5" id="projects">
+        <div class="container">
+            <h2 class="mb-4">SOME PROJECTS</h2>
+            <div class="carousel">
+                <input type="radio" name="carousel" id="slide1" checked>
+                <input type="radio" name="carousel" id="slide2">
+                <input type="radio" name="carousel" id="slide3">
+                
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                        <img src="images/project1.png" alt="Project 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/project2.png" alt="Project 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/project3.png" alt="Project 3">
+                    </div>
+                </div>
 
-            <div class="carousel-slides">
-                <div class="carousel-slide" style="display: flex; justify-content: center;">
-                    <img src="images/project1.png" alt="Project 1" style="margin: auto;">
+                <div class="carousel-nav">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
                 </div>
-                <div class="carousel-slide" style="display: flex; justify-content: center;">
-                    <img src="images/project2.png" alt="Project 2" style="margin: auto;">
-                </div>
-                <div class="carousel-slide" style="display: flex; justify-content: center;">
-                    <img src="images/project3.png" alt="Project 3" style="margin: auto;">
-                </div>
-            </div>
-
-            <div class="carousel-nav">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
             </div>
         </div>
     </section>
 
-    <section class="contact-me" id="contact-me">
-        <h2>CONTACT ME</h2>
-        <p>Email: carlos@website.com</p>
-        <p>Phone: +123 456 7890</p>
-        <form>
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section class="contact-me text-center py-5" id="contact-me">
+        <div class="container">
+            <h2 class="mb-4">CONTACT ME</h2>
+            <p>Email: carlos@website.com</p>
+            <p>Phone: +123 456 7890</p>
+            <form>
+                <div class="form-group">
+                    <label for="name" style="float: left; color: #888;">Name</label>
+                    <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Name" required>
+                    <label for="email" style="float: left; color: #888;">Email</label>
+                    <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject" style="float: left; color: #888;">Subject</label>
+                    <input type="text" class="form-control form-control-lg" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" style="float: left; color: #888;">Message</label>
+                    <textarea class="form-control form-control-lg" id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg send-message">Send Message</button>
+            </form>
+        </div>
     </section>
-
-    <footer>
-        <a href="https://github.com"><img src="images/github.png" alt="GitHub"></a>
-        <a href="https://linkedin.com"><img src="images/linkedin.png" alt="LinkedIn"></a>
-        <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
-    </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
