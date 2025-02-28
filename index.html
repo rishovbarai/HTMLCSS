@@ -1,4 +1,4 @@
-~<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,29 @@
 
     <section class="projects" id="projects">
         <h2>SOME PROJECTS</h2>
-        <img src="images/project.png" alt="Project Image">
+        <div class="carousel" style="text-align: center;">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+
+            <div class="carousel-slides">
+                <div class="carousel-slide" style="display: flex; justify-content: center;">
+                    <img src="images/project1.png" alt="Project 1" style="margin: auto;">
+                </div>
+                <div class="carousel-slide" style="display: flex; justify-content: center;">
+                    <img src="images/project2.png" alt="Project 2" style="margin: auto;">
+                </div>
+                <div class="carousel-slide" style="display: flex; justify-content: center;">
+                    <img src="images/project3.png" alt="Project 3" style="margin: auto;">
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+        </div>
     </section>
 
     <section class="contact-me" id="contact-me">
