@@ -227,6 +227,10 @@ body {
 .about-me, .projects, .contact-me {
     padding: 50px 20px;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -284,6 +288,8 @@ button:hover {
 .send-message {
     width: 50%;
     color: rgb(255, 255, 255);
+    margin: 20px auto;
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -327,7 +333,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -378,6 +384,8 @@ form button {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 20px auto;
+    display: block;
 }
 
 form button:hover {
@@ -428,7 +436,8 @@ footer a[href*="linkedin.com"] img {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
+    height: 80vh;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
@@ -451,8 +460,9 @@ footer a[href*="linkedin.com"] img {
 
 .carousel-slide img {
     width: 100%;
+    height: 65vh;
+    object-fit: cover;
     display: block;
-    height: auto;
 }
 
 .carousel-nav {
@@ -531,4 +541,22 @@ form .form-control-lg {
 
 form textarea.form-control-lg {
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 70vh;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        height: 60vh;
+        max-width: 95%;
+    }
+}
+
+.highlight-text {
+    color: #ff0000;
 }
