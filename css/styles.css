@@ -438,7 +438,6 @@ footer a[href*="linkedin.com"] img {
     position: relative;
     width: 100%;
     max-width: 1000px;
-    height: 50vh;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
@@ -545,14 +544,14 @@ form textarea.form-control-lg {
 
 @media (max-width: 768px) {
     .carousel {
-        height: 70vh;
+        height: 80vh;
         max-width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     .carousel {
-        height: 60vh;
+        height: 80vh;
         max-width: 95%;
     }
 }
