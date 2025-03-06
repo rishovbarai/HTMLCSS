@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     box-sizing: border-box;
     background-color: #1a1a1a;
     color: white;
@@ -13,7 +13,7 @@ body {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 10px;
     position: relative;
     height: 100vh;
     display: flex;
@@ -190,14 +190,14 @@ body {
 }
 
 .header-text h1 {
-    font-size: 4em;
+    font-size: 3em;
     margin: 0;
     white-space: normal;
 }
 
 @media (max-width: 768px) {
     .header-text h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
 
@@ -214,18 +214,18 @@ body {
 
 @media (max-width: 768px) {
     .header-text p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
 @media (max-width: 480px) {
     .header-text p {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 }
 
 .about-me, .projects, .contact-me {
-    padding: 50px 20px;
+    padding: 30px 10px;
     text-align: center;
     height: 100vh;
     display: flex;
@@ -241,12 +241,12 @@ body {
 
 @media (max-width: 480px) {
     .about-me, .projects, .contact-me {
-        padding: 30px 10px;
+        padding: 40px 5px;
     }
 }
 
 .about-me h2, .projects h2, .contact-me h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin-bottom: 20px;
 }
 
@@ -257,7 +257,8 @@ body {
 }
 
 button {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 12px;
     font-size: 1em;
     cursor: pointer;
     background-color: #f0ad4e;
@@ -333,7 +334,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -350,11 +351,11 @@ form {
 }
 
 form input, form textarea {
-    height: 12vh;
+    height: auto;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: 1em;
+    font-size: 0.9em;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
@@ -437,7 +438,7 @@ footer a[href*="linkedin.com"] img {
     position: relative;
     width: 100%;
     max-width: 1000px;
-    height: 80vh;
+    height: 50vh;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
@@ -459,7 +460,7 @@ footer a[href*="linkedin.com"] img {
 
 .carousel-slide img {
     width: 100%;
-    height: 65vh;
+    height: auto;
     object-fit: cover;
     display: block;
 }
