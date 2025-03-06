@@ -252,7 +252,7 @@ body {
 
 .about-me p, .contact-me p {
     font-size: 1em;
-    max-width: 600px;
+    max-width: 530px;
     margin: 0 auto 20px;
 }
 
@@ -389,7 +389,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #e69a3a;
+    background-color: #ffb151;
 }
 
 footer {
@@ -503,7 +503,7 @@ footer a[href*="linkedin.com"] img {
 #slide1:checked ~ .carousel-nav label[for="slide1"],
 #slide2:checked ~ .carousel-nav label[for="slide2"],
 #slide3:checked ~ .carousel-nav label[for="slide3"] {
-    background-color: #f0ad4e;
+    background-color: #ffca6e;
 }
 
 .burger-menu.open .bar:nth-child(1) {
@@ -557,5 +557,5 @@ form textarea.form-control-lg {
 }
 
 .highlight-text {
-    color: #ff0000;
+    color: #ff5e00;
 }
